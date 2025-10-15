@@ -1,0 +1,84 @@
+{
+  "users": [
+    {
+      "id": "123",
+      "name": "haadiya",
+      "email": "had@gmail.com",
+      "password": "pass123",
+      "role": "public",
+      "isActive": true
+    },
+    {
+      "id": "c8a2",
+      "email": "tab@gmail.com",
+      "password": "pass1234",
+      "fullname": "tabassum",
+      "role": "admin",
+      "isActive": true
+    },
+    {
+      "id": "ece6",
+      "email": "aar@gmail.com",
+      "password": "pass4321",
+      "fullname": "aaira",
+      "role": "public",
+      "isActive": true
+    },
+    {
+      "id": "1c24",
+      "email": "ad@gmail.com",
+      "password": "654321",
+      "fullname": "adeeba",
+      "role": "public",
+      "isActive": true
+    },
+    {
+      "id": "e76f",
+      "email": "malik@gmail.com",
+      "password": "md1234",
+      "fullname": "abdul",
+      "role": "public",
+      "isActive": true
+    },
+    {
+      "id": "f04d",
+      "email": "maira@gmail.com",
+      "password": "maira1234",
+      "fullname": "maira",
+      "role": "public",
+      "isActive": true
+    },
+    {
+      "id": "c4ee",
+      "email": "abdul@gmail.com",
+      "password": "abdul1234",
+      "fullname": "Abdul",
+      "role": "public",
+      "isActive": true
+    },
+    {
+      "id": "46c9",
+      "email": "abcd@gmai.com",
+      "password": "12345",
+      "fullname": "abcd",
+      "role": "public",
+      "isActive": true
+    },
+    {
+      "id": "71b8",
+      "email": "nas@gmail.com",
+      "password": "89197",
+      "fullname": "naseha",
+      "role": "public",
+      "isActive": true
+    },
+    {
+      "id": "5f8b",
+      "email": "tarr@gmail.com",
+      "password": "9542",
+      "fullname": "tarannum",
+      "role": "public",
+      "isActive": true
+    }
+  ]
+}
