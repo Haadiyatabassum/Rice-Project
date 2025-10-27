@@ -2,7 +2,7 @@ import axios from "axios";
 
 //creating a reusable instance for all api calls endpoints
 export const apiClient=axios.create({
-    baseURL:import.meta.env.VITE_BACKEND_BASE_URL,
+    baseURL:import.meta.env.VITE_API_URL,
     headers:{
         "Content-Type":"application/json"
     }
@@ -18,7 +18,7 @@ apiClient.interceptors.request.use(
         {
             config.headers.Authorization=`Bearer ${token}`
         }
-        return config
+        return config;
     },
     (error)=>Promise.reject(error)
 )
