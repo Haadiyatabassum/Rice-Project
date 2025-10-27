@@ -19,7 +19,7 @@ const Unauthorized=React.lazy(()=>import("../components/common/Unauthorized"))
 const PageNotFound=React.lazy(()=>import("../components/common/PageNotFound"))
 const Orders=React.lazy(()=>import("../components/common/Orders"))
 const VendorDashboard=React.lazy(()=>import("../layouts/vendor/VendorDashboard"))
-const AdminDashboard=React.lazy(()=>import("../layouts/admin/AdminLayout"))
+const AdminDashboard=React.lazy(()=>import("../layouts/admin/AdminDashboard"))
 
 const Approutes = () => {
  //access the context of user like authenticated and role
@@ -27,7 +27,6 @@ const Approutes = () => {
 
   //useLocation hook to access current url path
   let location=useLocation()
-  //console.log(url)
 
   let hideNavbar=['/auth']
   let shouldHideNav=hideNavbar.includes(location.pathname)   //true or false values
@@ -45,6 +44,7 @@ const Approutes = () => {
   <Route path="/contact" element={<Contact/>}/>
   <Route path="/blog" element={<Blog/>}/>
   <Route path="/about" element={<About/>}/>
+   <Route path="/orders" element={<Orders/>}/>
   <Route path="/privacy" element={<PrivacyPolicy/>}/>
   <Route path="/terms" element={<TermsandConditions/>}/>
 

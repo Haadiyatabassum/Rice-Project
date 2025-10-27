@@ -9,7 +9,7 @@ export const apiClient=axios.create({
 })
 
 //generating a token
-//used for checking who u are (admin dealer user)  and what access(authorization) we have 
+//used for checking who u are (admin vendor user)  and what access(authorization) we have 
 
 apiClient.interceptors.request.use(   
      (config)=>{
@@ -37,9 +37,9 @@ apiClient.interceptors.response.use(
     }
 )
 
-//generating dummy token stimulation(it will be geenrated in backend)
+//generating dummy token stimulation(it will be generated in backend)
 export const mockAuth={
-    generateToken:()=>{
+    generateToken:(user)=>{
         return `mock_auth ${user.id}_${Date.now()}`
     }
 }

@@ -60,7 +60,7 @@ const styles = {
 const About = () => {
 
    const timeline = [
-    { year: '2010', text: 'Founded Rice Basket to deliver premium rice globally.', icon: '🌾' },
+    { year: '2010', text: 'Founded Rice Mart to deliver premium rice globally.', icon: '🌾' },
     { year: '2013', text: 'Entered Retail market with branded rice packs.', icon: '🛍️' },
     { year: '2016', text: 'Received National Agriculture  Export Award.', icon: '🏆' },
     { year: '2019', text: 'Expanded our products to 20+ countries worldwide.', icon: '🌍' },
@@ -168,7 +168,7 @@ const features = [
      <h2 style={{fontWeight:'bold',color:'gold'}}>Overview</h2>
  <p>
  Established in 2010, Founded with a vision to deliver premium-quality rice to households 
-   and businesses across the globe,Rice Basket stands as a symbol of excellence, tradition, 
+   and businesses across the globe,Rice Mart stands as a symbol of excellence, tradition, 
    and innovation in rice processing.Our state-of-the-art milling facility combines traditional
    know-how with cutting-edge technology to ensure the highest quality standards in every grain.
     From the moment paddy enters our plant to the final sealed pack, our commitment to hygiene, 
@@ -268,21 +268,21 @@ const features = [
     </div>
 
 
-   {/*Download Rice Basket App  */}
+   {/*Download Rice Mart App  */}
   <div style={styles.section}>
    <Row gutter={[32, 32]} align="middle">
  {/* Left Side Image*/}
   <Col xs={24} md={10}>
 <img
   src="src/assets/s4.jpg" 
- alt="Rice Basket App"
+ alt="Rice Mart App"
  style={styles.image}
  />
 </Col>
 
  {/* Right Side content */}
   <Col xs={24} md={14}>
-  <h2 style={styles.title}>Download the Rice Basket App</h2>
+  <h2 style={styles.title}>Download the Rice Mart App</h2>
  <p style={styles.subtitle}>
  Enjoy fresh rice varieties, exclusive deals, and doorstep delivery.
  </p>

@@ -9,11 +9,11 @@ function Footer() {
     <h5 className="text-uppercase mb-4 fw-bold text-warning ">RICE Mart</h5>
       <p>
    Getting the best quality rice which tastes good isn’t so easy to find.
-   This is where RiceMart comes in. Everyone has a different taste of rice
+   This is where Rice Mart comes in. Everyone has a different taste of rice
   and are very specific when it comes to rice.
     </p>
 
-  <div className=" mt-3">
+  <div className="mt-3">
    <a href="#" className="text-white "><i className="bi bi-facebook me-3 fs-5"></i></a>
     <a href="#" className="text-white"><i className="bi bi-instagram me-3 fs-5 "></i></a>
     <a href="#" className="text-white"><i className="bi bi-whatsapp me-3 fs-5"></i></a>

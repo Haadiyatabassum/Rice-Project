@@ -34,7 +34,7 @@ const Blog = () => {
   return (
     <div className="container my-5">
       {/* Page Title */}
-      <h2 className="text-center mb-4" style={{color:"gold",fontWeight:"bold"}}>Rice Basket Blog</h2>
+      <h2 className="text-center mb-4" style={{color:"gold",fontWeight:"bold"}}>Rice Mart Blog</h2>
       {/* Blog Grid */}
       <div className="row">
         {blogs.map((blog) => (

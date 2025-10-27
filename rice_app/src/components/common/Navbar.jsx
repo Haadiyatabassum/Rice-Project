@@ -16,7 +16,7 @@ const { user, logout } = useAuth();
 
 const handleMenuClick = ({ key }) => {
   if (key === 'logout') {
-    logout(); // <-- this now properly clears storage + redirects
+    logout(); // --> this now properly clears storage + redirects
   } else {
     navigate(`/${key}`);
   }
@@ -95,10 +95,7 @@ const handleMenuClick = ({ key }) => {
 
           {/* Right side actions */}
           <div className="d-flex align-items-center">
-            {/* Dealer CTA */}
-            <Link to="/dealer-register" className="btn btn-warning me-3">
-              Become a Vendor
-            </Link>
+          
 
 
             {/* User Section */}

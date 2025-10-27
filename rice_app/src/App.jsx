@@ -1,17 +1,17 @@
 import React from 'react'
-//import AdminLayout from './layouts/admin/AdminLayout'
+
 import Approutes from './routes/Approutes'
-
-
-
-
+import { CartProvider } from "./context/CartContext";
+import { VendorProvider } from "./context/VendorContext";
 const App = () => {
   return (
     <>
-      <Approutes/>
-
-    {/*<AdminLayout/>*/}
-  
+    
+  <VendorProvider>
+  <CartProvider>
+ <Approutes/>
+</CartProvider>
+</VendorProvider>
     </>
   )
 }

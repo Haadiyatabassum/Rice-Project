@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 
 // creating the store 
 export const AuthContext = createContext();
-console.log("context",AuthContext)//returns provider and consumer 
+console.log("context",AuthContext) //returns provider and consumer 
 
 // creating initial state 
 const initialState = {
@@ -16,8 +16,6 @@ const initialState = {
   loading: true,
   error: null,
 };
-
-
 
 // dispatch: action to reducers
 // reducers :these pure function where action are carried out to update state variable
@@ -32,10 +30,10 @@ export const AuthProvider=({children})=>{
         const token = localStorage.getItem('token');
         const user = localStorage.getItem('user');
         
-        // condition to check weather data exists or not 
+        // condition to check whether data exists or not 
         if(token && user){
            try {
-            // parse the data (converts strigfied format into readable format)
+            // parse the data (converts stringified format into readable format)
           const userData = JSON.parse(user);
           dispatch({
                 type: 'LOGIN_SUCCESS', // action--> to reducers
@@ -51,9 +49,9 @@ export const AuthProvider=({children})=>{
 
     //  useEffect to redirect the User To different Ui Based on Role
     useEffect(()=>{
-      if (state.isAuthenticated && !state.loading) { // checking weather user is logged in or not
-        if (state.role === 'admin') navigate('/admin'); // checking weather user id admin
-        else if (state.role === 'vendor') navigate('/vendor');// // checking weather user id dealer
+      if (state.isAuthenticated && !state.loading) { // checking whether user is logged in or not
+        if (state.role === 'admin') navigate('/admin'); // checking whether user id admin
+        else if (state.role === 'vendor') navigate('/vendor');// // checking whether user id vendor
         else navigate('/shop'); //default naviagtion if user role is public
       }
 

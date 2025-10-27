@@ -7,10 +7,10 @@ const Sidebar = () => {
       <div className="sidebar">
         <h2>RiceMart</h2>
         <ul >
-          <li><a href="#" className="active"> <FaHome className="icon"/>Home</a>
+          <li><a href="/" className="active"> <FaHome className="icon"/>Home</a>
           </li>
           
-          <li><a href="#">  <FaBox className="icon"/>Products</a>
+          <li><a href="/">  <FaBox className="icon"/>Products</a>
           </li>
 
           <li><a href="#"><FaShoppingCart className="icon"/>Orders</a>

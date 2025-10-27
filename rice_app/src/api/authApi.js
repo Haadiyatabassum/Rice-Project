@@ -1,6 +1,5 @@
 import {apiClient,mockAuth} from "./config"
 
-
 //function to handle login api
 export const loginUser=async(email,password)=>{
     try{
@@ -10,7 +9,7 @@ export const loginUser=async(email,password)=>{
         //checking the user
         console.log(res)
 
-        //checking already the user email or user exist in the database
+        //checking already that the users email or user exist in the database
         let user=res.data.find(u=>u.email==email&&u.password==password)
 
         //if user not exist throw an error
@@ -24,13 +23,13 @@ export const loginUser=async(email,password)=>{
         //save the token and user to localstorage
         localStorage.setItem('token',token)
         localStorage.setItem('user',JSON.stringify(user))
-        
         return {user,token}
-    }
-    catch(error){
+         }
+         catch(error)
+         {
          return error
-    }
-}
+         }
+       }
 
 //function to handle register api
 export const registerUser=async(newuser)=>{
@@ -46,7 +45,6 @@ export const registerUser=async(newuser)=>{
     }
 
     //creating new user
-    
     let saveUser=await apiClient.post("/users",newuser)
     
 
@@ -56,16 +54,16 @@ export const registerUser=async(newuser)=>{
     //save the token and user to localstorage
     localStorage.setItem('token',token)
     localStorage.setItem('user',JSON.stringify(saveUser.data))
-
      return {user:saveUser.data,token}
-    }catch(error){
+    }
+    catch(error)
+    {
             return error
     }
         
 }
 
 //function to handle logout api
-
 export const logoutUser=()=>{
     localStorage.removeItem("token")
     localStorage.removeItem("user")

@@ -64,7 +64,7 @@ const handleFinish=async(values)=>{
           <Text type="secondary fs-6">
             {isLogin
               ? "sign to shop the best rice"
-              : "create your account to getstarted"}
+              : "create your account to get started"}
           </Text>
         </div>
 

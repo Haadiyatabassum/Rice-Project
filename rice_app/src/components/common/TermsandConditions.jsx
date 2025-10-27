@@ -43,7 +43,7 @@ export default function TermsandConditions() {
         </div>
       </header>
 
-      {/* MAIN */}
+      {/* Main */}
       <main className="flex-fill">
         <div className="container py-5">
           <div className="row g-4">

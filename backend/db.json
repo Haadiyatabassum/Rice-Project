@@ -13,7 +13,7 @@
       "email": "tab@gmail.com",
       "password": "pass1234",
       "fullname": "tabassum",
-      "role": "admin",
+      "role": "public",
       "isActive": true
     },
     {
@@ -78,6 +78,22 @@
       "password": "9542",
       "fullname": "tarannum",
       "role": "public",
+      "isActive": true
+    },
+    {
+      "id": "20d6",
+      "email": "alia@gmail.com",
+      "password": "9876",
+      "fullname": "alia",
+      "role": "vendor",
+      "isActive": true
+    },
+    {
+      "id": "231d",
+      "email": "yas@gmail.com",
+      "password": "8978",
+      "fullname": "Yasmeen",
+      "role": "admin",
       "isActive": true
     }
   ]
