@@ -95,6 +95,14 @@
       "fullname": "Yasmeen",
       "role": "admin",
       "isActive": true
+    },
+    {
+      "id": "2626",
+      "email": "mahi@gmail.com",
+      "password": "mahi123",
+      "fullname": "Mahi",
+      "role": "public",
+      "isActive": true
     }
   ]
 }
